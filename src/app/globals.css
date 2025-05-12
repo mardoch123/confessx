@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.testimonial-carousel .control-arrow {
+  background-color: rgba(201, 170, 113, 0.7) !important; /* Couleur primaire du logo */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testimonial-carousel .control-prev {
+  left: 10px;
+}
+
+.testimonial-carousel .control-next {
+  right: 10px;
+}
+
+.testimonial-carousel .control-arrow:before {
+  margin: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
